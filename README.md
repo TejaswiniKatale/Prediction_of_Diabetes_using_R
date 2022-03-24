@@ -1,5 +1,5 @@
 # Prediction_of_Diabetes_using_R
-################################################1)Without Feature selection and then Upsampling###################################################################
+###1)Without Feature selection and then Upsampling###
 library(caTools)
 f<-read.csv("D:\\Excel\\Diabetes[Diabetes_1.csv](https://github.com/TejaswiniKatale/Prediction_of_Diabetes_using_R/files/8338922/Diabetes_1.csv)
 _1.csv")
@@ -181,7 +181,7 @@ f<-f[,c(-1,-2)]
       rec_p = c(rec_p,rec22)
       rec_y = c(rec_y,rec33)
 
-# Visulaisation---
+# Visualization---
       plot(acc_vector,type="o",col="red",xlab="Algorithms",ylab="Accuracy",xaxt='n',lwd=5,cex.lab=1.5)
       axis(1,at=c(1,2,3),labels=c("DT","KNN","RF"),cex.axis=2)
 
@@ -198,7 +198,7 @@ f<-f[,c(-1,-2)]
       axis(1,at=c(1,2,3),labels=c("DT","KNN","RF"),cex.axis=2)
       
       
-      ####################################################2)With Upsampling then Feature Selection #############################################################
+   ###2)With Upsampling then Feature Selection ###
       library(caTools)
 f<-read.csv("D:\\Excel\\Diabetes_1.csv")
 f<-f[,c(-1,-2)]
@@ -402,7 +402,7 @@ f<-f[,c(-1,-2)]
       rec_p = c(rec_p,rec22)
       rec_y = c(rec_y,rec33)
       
-# Visulaisation---
+# Visualization---
       plot(acc_vector,type="o",col="red",xlab="Algorithms",ylab="Accuracy",xaxt='n',lwd=5,cex.lab=1.5)
       axis(1,at=c(1,2,3),labels=c("nn","knn","rf"),cex.axis=2)
       
@@ -420,7 +420,7 @@ f<-f[,c(-1,-2)]
       
       
       
-      #####################################################3)With feature selection then Upsampling###################################################
+      ###3)With feature selection then Upsampling###
       library(caTools)
 f<-read.csv("D:\\Excel\\Diabetes_1.csv")
 f<-f[,c(-1,-2)]
@@ -628,7 +628,7 @@ f<-f[,c(-1,-2)]
       rec_p = c(rec_p,rec22)
       rec_y = c(rec_y,rec33)
       
-# Visulaisation---
+# Visualization---
       plot(acc_vector,type="o",col="red",xlab="Algorithms",ylab="Accuracy",xaxt='n',lwd=5,cex.lab=1.5)
       axis(1,at=c(1,2,3),labels=c("nn","knn","rf"),cex.axis=2)
       
